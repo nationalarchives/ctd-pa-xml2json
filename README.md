@@ -59,6 +59,13 @@ Notes:
 | &quot; | \\\\&quot; |
 | \[double space\] | \[single space\] |
 
+## Workflow
+
+* Run removeEmptyTags.xsl on the CALM XML to remove unneeded bulk
+* Run createBlankLookup.xsl to generate IAID-Lookup.xml
+* Run populateParentIAID.xsl to populate the parent IAID information in IAID-Lookup.xml
+* Run Disco_JSON.xsl to generate the JSON
+
 ## Helper stylesheets:
 
 **Prototypes/getValues** - This stylesheet was created as an easy way to extract all the values of a certain field (specified in the stylesheet) for review or analysis
